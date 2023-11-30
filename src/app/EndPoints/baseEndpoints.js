@@ -2,6 +2,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import axios from "axios";
 import { logOut, setCredentials } from "../Slices/AuthSlice";
 const URL = "http://115.245.192.138/";
+// const URL = "https://mynextfilm.ai";
+
 
 const baseApi = fetchBaseQuery({
   baseUrl: URL,

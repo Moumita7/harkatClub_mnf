@@ -32,6 +32,7 @@ import MyClubsHead from './components/MyClubs/MyClubsHead';
 import SingleHarkatPage from './components/HarkatBase/SingleHarkatPage';
 
 import 'tailwindcss/tailwind.css'; // Make sure to import your Tailwind CSS file
+import ClubLocation from './components/MyClubs/ClubLocation';
 // import './your-custom-styles.css';
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
 
         {/* <Route path='/' element={<MyClubs />}></Route> */}
         <Route path='/' element={<MyClubsHead />}></Route>
+
+        {/* <Route path='/' element={<ClubLocation />}></Route> */}
+
         {/* <Route path='/' element={<SingleHarkatPage/>}></Route> */}
       
 
