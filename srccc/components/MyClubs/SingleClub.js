@@ -11,10 +11,6 @@ import vedioimg from "../images/vedio.svg"
 
 
 const SingleClub = () => {
-  const openFormPopup = () => {
-    document.querySelector(".form-container").style.display = "block";
-  };
-
   // const { data: club, isLoading } = useGetClubDataQuery();
   const { data: clubss} = useGetHatkatDataNewQuery();
   const arr=clubss|| []
@@ -29,15 +25,14 @@ const SingleClub = () => {
 
   const filteredArray = arr.filter(obj => obj.club_id?.user_id.id === clubsm?.id);
     console.log("fik",filteredArray);
-    
+
     const new_filteredArray = new_data.filter(obj => obj.club_id?.user_id.id !== clubsm?.id);
     console.log("fikf",clubss);
 
 
   return (
     <div className="">
-  
-    <div className="border flex items-center justify-center py-4 mb-5 rounded-md bg-[#FFE0E3]">
+        <div className="border flex items-center justify-center py-4 mb-5 rounded-md bg-[#FFE0E3]">
 
 <p className="font-medium text-[32px] text-[#787878]">Join any of the following clubs  or <span className="text-red-600 border-b border-b-red-600"><a href="http://115.245.192.138/harkat/propose">  Propose a new club </a> </span> </p>
 </div>
@@ -60,7 +55,7 @@ const SingleClub = () => {
     </div>
     <div className="flex  pl-2">
       <div className="  ">
-        <img className="w-[92px]  h-[92px] rounded-[50%] border-2"  src={`http://115.245.192.138/${club.club_profile}`} alt="" />
+        <img className="w-[94px]  h-[80px] rounded-[50%] border-2"  src={`http://115.245.192.138/${club.club_profile}`} alt="" />
       </div>
       <div className="flex justify-between gap-3  w-[80%]">
       <div className="flex  ml-2 gap-10">
@@ -79,7 +74,6 @@ const SingleClub = () => {
    
     </div>
     <div className="flex items-center py-2 pl-3 gap-2 ">
-    
           <img className="w-4  h-4  rounded-[50%]" src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE.jpg" alt="a"/>
           <p className="text-[12px] text-[#5B5B5B]">Administered/proposed by <span className="font-bold"> Manu </span> </p>
         </div>
@@ -88,7 +82,7 @@ const SingleClub = () => {
         </div>
         <div className="flex justify-between gap-3 pl-2">
           <button className="border  border-red-600 px-4 py-1 rounded-md text-[14px] text-red-600">View Club</button>
-          <button className="border bg-[#EE3C4D] px-4 py-1 rounded-md text-[14px] text-white" onClick={openFormPopup}>Request to join</button>
+          <button className="border bg-[#EE3C4D] px-4 py-1 rounded-md text-[14px] text-white">Request to join</button>
 
         </div>
 

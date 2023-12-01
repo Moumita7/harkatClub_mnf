@@ -29,7 +29,7 @@ const NearByClub = () => {
 
   return (
     <div className="">
-           <div className="border flex items-center justify-center py-4 mb-5 rounded-md bg-[#FFE0E3]">
+        <div className="border flex items-center justify-center py-4 mb-5 rounded-md bg-[#FFE0E3]">
 
 <p className="font-medium text-[32px] text-[#787878]">Join any of the following clubs  or <span className="text-red-600 border-b border-b-red-600"><a href="http://115.245.192.138/harkat/propose">  Propose a new club </a> </span> </p>
 </div>
@@ -48,7 +48,7 @@ const NearByClub = () => {
     </div>
     <div className="flex  pl-2">
       <div className="  ">
-        <img className="w-[92px]  h-[92px] rounded-[50%] border-2"  src={`http://115.245.192.138/${club.club_profile}`} alt="" />
+        <img className="w-[94px]  h-[80px] rounded-[50%] border-2"  src={`http://115.245.192.138/${club.club_profile}`} alt="" />
       </div>
       <div className="flex justify-between gap-3  w-[80%]">
       <div className="flex  ml-2 gap-10">
@@ -68,7 +68,7 @@ const NearByClub = () => {
     </div>
     <div className="flex items-center py-2 pl-3 gap-2 ">
           <img className="w-4  h-4  rounded-[50%]" src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE.jpg" alt="a"/>
-          <p className="text-[12px] text-[#5B5B5B]">Administered/proposed by Menu</p>
+          <p className="text-[12px] text-[#5B5B5B]">Administered/proposed by <span className="font-bold"> Manu </span></p>
         </div>
         <div className="pl-2 ">
           <p className="text-[12px] pb-2 text-[#5B5B5B]">Vision Lorem ipsum dolor sit elit debitis fuga ipsam fugiat deserunt,  nesciunt minima</p>
