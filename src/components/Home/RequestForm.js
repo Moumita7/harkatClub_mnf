@@ -62,13 +62,13 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                         <section className="p-3 bg-slate-100 text-black">
                             <div className="flex flex-row-reverse justify-center items-center">
                                 <h1 className="text-5xl font-bold ml-5 leading-none sm:text-4xl xl:max-w-md text-gray-900">{club?.club?.club_id?.club_name}</h1>
-                                <img alt="" src={`http://115.245.192.138${club?.club?.club_profile}`} className="object-cover w-20 h-20 rounded-full shadow" />
+                                <img alt="" src={`https://mynextfilm.ai${club?.club?.club_profile}`} className="object-cover w-20 h-20 rounded-full shadow" />
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)} className="container flex flex-col mx-auto ng-untouched ng-pristine ng-valid">
                                 <CSRFToken />
                                 <div className="grid gap-2 grid-cols-1 col-span-6 py-3">
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="mobilenumber" className="text-md font-semibold">Mobile Number <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="mobilenumber" className="text-md font-semibold">Mobile Number <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("mobilenumber", {
                                             required: {
                                                 value: true,
@@ -82,11 +82,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="mobilenumber"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="previousclubname" className="text-md font-semibold">Previous Club Name <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="previousclubname" className="text-md font-semibold">Previous Club Name <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("previousclubname", {
                                             required: {
                                                 value: true,
@@ -100,7 +100,7 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="previousclubname"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className="col-span-6 lg:col-span-6">
@@ -120,11 +120,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         {/* <ErrorMessage
                                             errors={errors}
                                             name="joinreason"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         /> */}
                                     </div>
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="mobilenumber" className="text-md font-semibold">Film Experience <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="mobilenumber" className="text-md font-semibold">Film Experience <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("filmexperience", {
                                             required: {
                                                 value: true,
@@ -141,11 +141,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="filmexperience"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="skills" className="text-md font-semibold">Skills <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="skills" className="text-md font-semibold">Skills <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("skills", {
                                             required: {
                                                 value: true,
@@ -159,11 +159,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="skills"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="equipments" className="text-md font-semibold">Film Equipments <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="equipments" className="text-md font-semibold">Film Equipments <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("filmequipments", {
                                             required: {
                                                 value: true,
@@ -177,11 +177,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="skills"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className="lg:col-span-6 sm:col-span-3">
-                                        <label for="clubexperience" className="text-md font-semibold">Club Experience <span className='text-[#ee3c4d]'>*</span></label>
+                                        <label for="clubexperience" className="text-md font-semibold">Club Experience <span className='text-[#33B0CA]'>*</span></label>
                                         <input type="text" {...register("clubexperience", {
                                             required: {
                                                 value: true,
@@ -195,7 +195,7 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="clubexperience"
-                                            render={({ message }) => <p className='text-[#ee3c4d]'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA]'>{message}</p>}
                                         />
                                     </div>
                                     <div className='col-span-6'>
@@ -211,11 +211,11 @@ const RequestForm = ({ setRequestForm, requestForm }) => {
                                         <ErrorMessage
                                             errors={errors}
                                             name="termcheck"
-                                            render={({ message }) => <p className='text-[#ee3c4d] text-center'>{message}</p>}
+                                            render={({ message }) => <p className='text-[#33B0CA] text-center'>{message}</p>}
                                         />
                                     </div>
                                     <div className='col-span-6 justify-self-center'>
-                                        <input className='uppercase font-semibold px-8 rounded-xl cursor-pointer py-2 mt-4 text-white' style={{ backgroundColor: "#ee3c4d" }} type="submit" value='Request to join' />
+                                        <input className='uppercase font-semibold px-8 rounded-xl cursor-pointer py-2 mt-4 text-white' style={{ backgroundColor: "#33B0CA" }} type="submit" value='Request to join' />
                                     </div>
                                 </div>
                             </form>

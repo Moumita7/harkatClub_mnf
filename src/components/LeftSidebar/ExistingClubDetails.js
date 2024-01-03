@@ -15,7 +15,7 @@
 
 //   const accessToken = localStorage.getItem("accessToken");
 
-//   const apiUrl = `http://115.245.192.138/harkat/api/v1/club-database/${clubId}/`;
+//   const apiUrl = `https://mynextfilm.ai/harkat/api/v1/club-database/${clubId}/`;
 
 //   useEffect(() => {
 //     const fetchData = async () => {
@@ -267,7 +267,7 @@
 
 //   const accessToken = localStorage.getItem("accessToken");
 
-//   const apiUrl = `http://115.245.192.138/harkat/api/v1/club-database/${clubId}/`;
+//   const apiUrl = `https://mynextfilm.ai/harkat/api/v1/club-database/${clubId}/`;
 
 //   useEffect(() => {
 //     const fetchData = async () => {
@@ -710,7 +710,7 @@ const ExistingClubDetails = ({
 
   const accessToken = localStorage.getItem("accessToken");
 
-  const apiUrl = `http://115.245.192.138/harkat/api/v1/club-database/${clubId}/`;
+  const apiUrl = `https://mynextfilm.ai/harkat/api/v1/club-database/${clubId}/`;
 
   useEffect(() => {
     const fetchData = async () => {

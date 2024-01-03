@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Url } from '../myServer';
 const CSRFToken = () => {
     const [csrftoken, setcsrftoken] = useState('');
     const getCookie = (name) => {
@@ -19,7 +20,7 @@ const CSRFToken = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                await axios.get(`http://115.245.192.138/harkat/get_csrf_token`);
+                await axios.get(`${Url}/harkat/get_csrf_token`);
             } catch (err) {
             }
         };

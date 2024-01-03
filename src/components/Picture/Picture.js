@@ -8,7 +8,9 @@ const Picture = ({ club_image }) => {
         <div className="">
             <div >
                 {/* <Image  src={img}  /> */}
-                <img src={img} alt="img" className='w-[100%] h-[150px]  rounded-md'/>
+                {/* <img src={img} alt="img" className='w-[158px] h-[99px]  rounded-md'/> */}
+
+                <img src={img} alt="img" className='w-[100%] h-[155px]  rounded-md'/>
             </div>
         </div>
     );

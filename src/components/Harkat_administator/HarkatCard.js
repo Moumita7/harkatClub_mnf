@@ -1,12 +1,35 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect } from 'react'
 import { BsPersonVideo, BsThreeDotsVertical } from 'react-icons/bs'
 import { GoVideo } from 'react-icons/go'
 import { Link } from 'react-router-dom'
+import { Url, config } from '../myServer'
 
 const HarkatCard = () => {
+
+  // let membercardapi=()=>{
+  //   axios.get("http://115.245.192.138/harkat/accepted_club_requests")
+  //   .then(
+  //     console.log()
+  //   )
+  // }
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${Url}/harkat/accepted_club_requests`, config);
+        // setData(response.data);
+        console.log("ress",response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
-    <div className='p-3 w-full rounded-lg border-2 border-gray-300'>
+    <div className='p-3 w-full  rounded-lg border-2 border-gray-300'>
       <div className="flex justify-between">
         <div className='flex gap-2 items-center'>
           <img className='rounded-full h-[42px] w-[42px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFBa3G11OUBYADP7ouSBgwiiRzSYorF4dfg&usqp=CAU" alt="" />
@@ -38,12 +61,12 @@ const HarkatCard = () => {
         <p className='my-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
         <p className='my-1'>MNF_harkat,profile, Harkat Admin</p>
         <p className="font-bold">Wants to:</p>
-        <p className='my-1 text-red-500'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
+        <p className='my-1 text-[#33B0CA]'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
       </div>
 
       <div className="flex justify-between gap-4 mt-3 mb-2">
-        <button className='py-1 px-3 bg-[#EE3C4D] rounded-lg text-white'>Message</button>
-        <Link className='underline' to="/">View Profile</Link>
+      <button className='py-1 px-3 bg-[] rounded-lg border border-[#33B0CA] text-[#33B0CA]' > <Link className='' to="/">View Profile</Link></button>
+        <button className='py-1 px-3 bg-[#33B0CA] rounded-lg text-white'>Message</button>
       </div>
 
     </div>
@@ -78,12 +101,14 @@ const HarkatCard = () => {
         <p className='my-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
         <p className='my-1'>MNF_harkat,profile, Harkat Admin</p>
         <p className="font-bold">Wants to:</p>
-        <p className='my-1 text-red-500'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
+        <p className='my-1 text-[#33B0CA]'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
       </div>
 
       <div className="flex justify-between gap-4 mt-3 mb-2">
-        <button className='py-1 px-3 bg-[#EE3C4D] rounded-lg text-white'>Message</button>
-        <Link className='underline' to="/">View Profile</Link>
+        <button className='py-1 px-3 bg-[] rounded-lg border border-[#33B0CA] text-[#33B0CA]' > <Link className='' to="/">View Profile</Link></button>
+        <button className='py-1 px-3 bg-[#33B0CA] rounded-lg text-white'>Message</button>
+
+       
       </div>
 
     </div>
@@ -118,12 +143,12 @@ const HarkatCard = () => {
         <p className='my-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
         <p className='my-1'>MNF_harkat,profile, Harkat Admin</p>
         <p className="font-bold">Wants to:</p>
-        <p className='my-1 text-red-500'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
+        <p className='my-1 text-[#33B0CA]'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
       </div>
 
       <div className="flex justify-between gap-4 mt-3 mb-2">
-        <button className='py-1 px-3 bg-[#EE3C4D] rounded-lg text-white'>Message</button>
-        <Link className='underline' to="/">View Profile</Link>
+      <button className='py-1 px-3 bg-[] rounded-lg border border-[#33B0CA] text-[#33B0CA]' > <Link className='' to="/">View Profile</Link></button>
+        <button className='py-1 px-3 bg-[#33B0CA] rounded-lg text-white'>Message</button>
       </div>
 
     </div>
@@ -158,12 +183,12 @@ const HarkatCard = () => {
         <p className='my-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
         <p className='my-1'>MNF_harkat,profile, Harkat Admin</p>
         <p className="font-bold">Wants to:</p>
-        <p className='my-1 text-red-500'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
+        <p className='my-1 text-[#33B0CA]'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
       </div>
 
       <div className="flex justify-between gap-4 mt-3 mb-2">
-        <button className='py-1 px-3 bg-[#EE3C4D] rounded-lg text-white'>Message</button>
-        <Link className='underline' to="/">View Profile</Link>
+      <button className='py-1 px-3 bg-[] rounded-lg border border-[#33B0CA] text-[#33B0CA]' > <Link className='' to="/">View Profile</Link></button>
+        <button className='py-1 px-3 bg-[#33B0CA] rounded-lg text-white'>Message</button>
       </div>
 
     </div>
@@ -198,12 +223,12 @@ const HarkatCard = () => {
         <p className='my-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
         <p className='my-1'>MNF_harkat,profile, Harkat Admin</p>
         <p className="font-bold">Wants to:</p>
-        <p className='my-1 text-red-500'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
+        <p className='my-1 text-[#33B0CA]'> {"{"}Make a feature film on Brahmaputra floods.{"}"} </p>
       </div>
 
       <div className="flex justify-between gap-4 mt-3 mb-2">
-        <button className='py-1 px-3 bg-[#EE3C4D] rounded-lg text-white'>Message</button>
-        <Link className='underline' to="/">View Profile</Link>
+      <button className='py-1 px-3 bg-[] rounded-lg border border-[#33B0CA] text-[#33B0CA]' > <Link className='' to="/">View Profile</Link></button>
+        <button className='py-1 px-3 bg-[#33B0CA] rounded-lg text-white'>Message</button>
       </div>
 
     </div>

@@ -1,0 +1,78 @@
+.share-link-container {
+    width: 730px;
+    height: 255px;
+}
+
+/* .leave-container {
+    display: block;
+} */
+
+.msg-container,
+.social-icons-container,
+.share-link {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.share-linik-content {
+    padding-top: 20px;
+}
+
+.msg-container div {
+    width: 30%;
+    text-align: center;
+}
+
+.msg-container div p {
+    color: #5C5C5C;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.share-linik-content img {
+    width: 41px;
+    height: 41px;
+    display: inline;
+}
+
+.social-icons-container div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.social-icons-container div img {
+    cursor: pointer;
+}
+
+.share-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-link input {
+    width: 80%;
+    font-size: 14px;
+    color: #5C5C5C;
+    border: 1px solid #454545;
+    border-radius: 12px;
+    outline: none;
+    padding: 8px 12px;
+}
+
+.share-link button {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f4f4f4;
+    background: #33B0CA;
+    border: none;
+    padding: 9px 19px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sharelink-cards-container {
+    display: flex;
+    gap: 1rem;
+}

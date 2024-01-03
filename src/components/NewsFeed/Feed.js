@@ -3,6 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { useSelector } from 'react-redux';
 import Toggle from './Toggle';
+import { CiStar } from "react-icons/ci";
+import { MdOutlineInsertComment } from "react-icons/md";
+import { FaRegShareSquare } from "react-icons/fa";
 
 
 const Feed = ({ media }) => {
@@ -24,8 +27,11 @@ const Feed = ({ media }) => {
         return () => document.body.removeEventListener("mousedown", closeMenu);
     }, []);
     return (
-        <div className="relative">
-            <div className="rounded-md shadow-xl w-full 2xl:w-[800px] mb-10">
+        <div className="relative ">
+            <div className='flex justify-center '>
+                <div className='border border-2 p-5 rounded-md '>
+          
+            <div className="rounded-md shadow-xl w-full 2xl:w-[800px] mb-10 border ">
                 <div className="flex items-center justify-between p-3 cursor-pointer">
                     <div className="flex items-center space-x-2 cursor-pointer">
                         <img src="https://media.istockphoto.com/id/1298261537/vector/blank-man-profile-head-icon-placeholder.jpg?s=612x612&w=0&k=20&c=CeT1RVWZzQDay4t54ookMaFsdi7ZHVFg2Y5v7hxigCA=" alt="profile pictures" className="object-cover object-center w-8 h-8 rounded-full shadow-sm" />
@@ -53,11 +59,34 @@ const Feed = ({ media }) => {
                 <figure>
                     <figcaption className='px-2 text-lg mb-3'>{post}</figcaption>
                     {
-                        img && <img src={img} alt="" className="w-full" />
+                        img && 
+                        <div className=' '>
+                        <img src={img} alt="" className="w-full" />
+                        <div className='flex justify-between px-5 items-center bg-colorButton text-white py-3'>
+
+                            <div className='flex gap-4'>
+                                <div className='flex items-center gap-2 '>
+                                <p><CiStar/></p> 
+                                    <p>9 Likes</p>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                <p><MdOutlineInsertComment/></p> 
+                                    <p>3 Comment</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p><FaRegShareSquare/></p>
+                            </div>
+                        </div>
+                       
+                        </div>
                     }
                     {
-                        video && <ReactPlayer
-                            style={{ maxWidth: "100%", width: "800px", margin: "0 auto" }}
+                        video && 
+                        <div className=' '>
+                        <ReactPlayer
+                      
+                            style={{minWidth:"100%" }}
                             volume={1}
                             loop
                             muted
@@ -66,6 +95,22 @@ const Feed = ({ media }) => {
                             alt="All the devices"
                             url={video}
                         />
+                        <div className='flex justify-between px-5 items-center bg-[#FFE2E5] py-3'>
+                        <div className='flex gap-4 '>
+                            <div className='flex items-center gap-2 '>
+                            <p><CiStar/></p> 
+                                <p>9 Likes</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                            <p><MdOutlineInsertComment/></p> 
+                                <p>3 Comment</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p><FaRegShareSquare/></p>
+                        </div>
+                    </div>
+                    </div>
                     }
                 </figure>
                 <div className="p-3">
@@ -94,6 +139,8 @@ const Feed = ({ media }) => {
                         </button>
                     </div> */}
                 </div>
+            </div>
+            </div>
             </div>
         </div>
     );

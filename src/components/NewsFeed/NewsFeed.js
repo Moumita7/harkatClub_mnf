@@ -29,7 +29,7 @@ const NewsFeed = () => {
     // }, [club_media,posts])
     // console.log(club_media);
     return (
-        <div className={`${styles.keep_scrolling} h-[720px] px-10 mt-10 2xl:ml-10`}>
+        <div className={`${styles.keep_scrolling} h-[720px]  mt-10 w-[1114px] `}>
             {isLoading ? <div className='flex justify-center items-center'><FeedLoader /></div> : <div>
                 {
                     club_media?.results?.map(media => <Feed key={media.media_id

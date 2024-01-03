@@ -9,6 +9,7 @@ import RequestClub from '../MyClubs/RequestClub';
 import { CiSearch } from 'react-icons/ci';
 import Member from './Member';
 import NearByClub from '../MyClubs/NearByClub';
+import ModeratorsClub from './ModeratorsClub';
 
 const Members = () => {
     const { id } = useParams();
@@ -20,9 +21,9 @@ const Members = () => {
 const renderComponent = () => {
   switch (activeComponent) {
     case 1:
-      return <Member />;
+      return <Member/>;
     case 2:
-      return <RequestClub />;
+      return <ModeratorsClub />;
     case 3:
       return <RequestClub />;
     default:
@@ -35,42 +36,44 @@ const renderComponent = () => {
     const { data: members, isLoading } = useGetClubDataQuery(id);
     const activeMembers = members.all_members.filter(member => member.member_status === 'active');
     return (
-      <div className="container mt-2 px-10">
+      <div className="container mt-2 px-10 border h-[658.298px]">
       <div className="flex justify-between space-x-4">
       <div className='flex gap-20 '>
   
   
         <button
-          className={`${activeComponent===1 ? "text-[#EE3C4D] border-b border-b-2 border-red-500 ":""} font-bold`}
+          className={`${activeComponent===1 ? "text-[#33B0CA] border-b border-b-2 border-[#33B0CA] ":""} font-bold`}
           onClick={() => setActiveComponent(1)}
         >
     Members
         </button>
         <button
-       className={`${activeComponent===2 ? "text-[#EE3C4D] border-b border-b-2 border-red-500 ":""} font-bold`}
+       className={`${activeComponent===2 ? "text-[#33B0CA] border-b border-b-2 border-[#33B0CA] ":""} font-bold`}
           onClick={() => setActiveComponent(2)}
         >
  Moderators
         </button>
         <button
-         className={`${activeComponent===3 ? "text-[#EE3C4D] border-b border-b-2 border-red-500 ":""} font-bold `}
+         className={`${activeComponent===3 ? "text-[#33B0CA] border-b border-b-2 border-[#33B0CA] ":""} font-bold `}
           onClick={() => setActiveComponent(3)}
         >
 Requests
-        </button>
+        </button> 
         </div>
         <div className='flex justify-center items-center'>
+
+          
   
-        <input type="text" name="" id="" placeholder='Search' className=' border-t border-l border-b rounded-tl-md rounded-bl-md py-1 px-2 border-zinc-400' />
+        {/* <input type="text" name="" id="" placeholder='Search' className=' border-t border-l border-b rounded-tl-md rounded-bl-md py-1 px-2 border-zinc-400' />
         
           <div className=' border-t border-r border-b p-2  border-zinc-400 rounded-tr-md rounded-br-md '>
   
         <CiSearch/>
-          </div>
+          </div> */}
         </div>
       </div>
   
-      <div className="mt-8">{renderComponent()}</div>
+      <div className="mt-4">{renderComponent()}</div>
     </div>
    
         // </div>

@@ -1,0 +1,41 @@
+.location-input-container {
+    width: 386px;
+    height: 164px;
+    display: none;
+}
+
+.location-input-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+}
+
+.location-input-content input,
+.location-input-content button {
+    width: 287px;
+    height: 32px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #BFBFBF;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.location-input-content button {
+    color: #EE3C4D;
+    font-weight: 600;
+    border: 1px solid #EE3C4D;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* map */
+.mymapp{
+transform:translate(-50%,-50%);
+z-index: 4;
+}

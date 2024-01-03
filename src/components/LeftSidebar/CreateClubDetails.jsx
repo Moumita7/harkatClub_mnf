@@ -37,7 +37,7 @@ const CreateClubDetails = ({setIsCreateClubDetails,setIsExistingClubDetails}) =>
   const [editedData, setEditedData] = useState(null); // State to store edited data
   const { id:clubId } = useParams();
   const accessToken = localStorage.getItem("accessToken");
-  const apiUrl = `http://115.245.192.138/harkat/api/v1/club-database/${clubId}/`;
+  const apiUrl = `https://mynextfilm.ai/harkat/api/v1/club-database/${clubId}/`;
 
   useEffect(() => {
     const fetchData = async () => {

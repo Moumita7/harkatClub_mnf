@@ -73,7 +73,7 @@ const HarkatAdministator = () => {
   return (
     <div className=" p-2 my-5 mx-7 rounded-lg border-2 border-gray-200 mt-2">
       <div className="flex justify-center">
-        <span className="text-[24px] text-white text-center font-bold px-6 mt-3 py-2 rounded-full bg-[#EE3C4D] mb-6">
+        <span className="text-[24px] text-white text-center font-bold px-6 mt-3 py-2 rounded-full bg-[#33B0CA] mb-6">
           MNF Harkat administator
         </span>
       </div>

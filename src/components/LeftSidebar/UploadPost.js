@@ -117,17 +117,17 @@ const UploadPost = () => {
         setImageActive(false);
     }
     return (
-        <div className='2xl:w-[800px]'>
+        <div className='2xl:w-[90%]'>
             {/* <div className='flex justify-between items-center mt-10 text-xl px-5'>
                 <h1 onClick={uploadImageClick} className={imageActive ? 'w[250px] primary-bg p-2 px-16 cursor-pointer rounded-md text-white font-semibold' : 'w[250px] bg-accent p-2 px-16 cursor-pointer rounded-md'}>Upload Image</h1>
                 <h1 onClick={uploadVideoClick} className={videoActive ? 'w[250px] primary-bg p-2 px-16 cursor-pointer rounded-md text-white font-semibold' : 'w[250px] bg-accent p-2 px-16 cursor-pointer rounded-md'}>Upload Videos</h1>
             </div> */}
-            <div className='flex flex-col justify-center ml-6 mt-4 relative'>
+            <div className='flex flex-col    justify-center ml-[8%] mt-4 relative'>
                 <form onSubmit={handleSubmit}>
                     <CSRFToken />
                     <div className="w-full max-w-xs ">
                     
-                    <textarea name='title' className="textarea textarea-primary h-[170px] resize-none w-[45rem]" maxLength={300} placeholder="Type here"></textarea>
+                    <textarea name='title' className="textarea textarea-primary h-[170px] resize-none w-[60rem]" maxLength={300} placeholder="Type here"></textarea>
                     
                    
 
@@ -141,7 +141,7 @@ const UploadPost = () => {
                     <BiHappy />
 
                     </div>
-                  <input className='   rounded-md cursor-pointer px-3 font-normal  mt-4 text-white' style={{ backgroundColor: "#ee3c4d" }} type="submit" value='Post' />
+                  <input className='   rounded-md cursor-pointer px-3 font-normal  mt-4 text-white bg-colorButton'  type="submit" value='Post' />
               </div>
                     <div className='flex flex-col    mb-2'>
                         <div
@@ -152,8 +152,8 @@ const UploadPost = () => {
                             onDrop={onDrop}
                         >
                             <div className="drop-file-input__label">
-                                <img className='ml-[77%] w-[20%]' src={uploadImg} alt="" />
-                                {fileList === '' ? '' : <p className='ml-[72%]'>Drag & Drop </p>}
+                                <img className=' w-[10%]' src={uploadImg} alt="" />
+                                {fileList === '' ? '' : <p className="">Drag & Drop </p>}
                                 <p>{fileList.slice(0, 20)}</p>
                                 <input type="file" name='uploadFile' accept="image/*,video/*" onChange={fileName} />
                             </div>

@@ -119,7 +119,15 @@ export const harkatClubSlice = apiSlice.injectEndpoints({
             }),
             invalidatesTags: ["member-hanlder"]
         }),
+       
+             getShareData: builder.query({
+            query: (id) => ({
+                url: `/memberpage/centraldatabaseapi/userid${id}`,
+                method: "GET", 
+            }),
+            providesTags: ["sharedata"]
+        }),
     }),
 })
 
-export const { useGetHatkatDataQuery,useGetHatkatDataNewQuery, useGetClubDataQuery, useGetClubMemberQuery, useCreateEventMutation, useRequestJoinformMutation, useMemberUpdateMutation, useGetEventQuery, useUpdateClubMediaMutation, useGetClubMediaQuery, useDeleteClubMediaMutation, useUploadImageMutation, useUploadVideoMutation, useMemberBlockMutation, useDeleteRQMutation } = harkatClubSlice;
+export const { useGetHatkatDataQuery,useGetHatkatDataNewQuery, useGetClubDataQuery, useGetClubMemberQuery, useCreateEventMutation, useRequestJoinformMutation, useMemberUpdateMutation, useGetEventQuery, useUpdateClubMediaMutation, useGetClubMediaQuery, useDeleteClubMediaMutation, useUploadImageMutation, useUploadVideoMutation, useMemberBlockMutation, useDeleteRQMutation ,useGetShareData} = harkatClubSlice;

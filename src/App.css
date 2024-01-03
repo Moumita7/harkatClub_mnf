@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,13 +43,13 @@
 }
 
 .active {
-  background-color: #ee3c4d !important;
+  background-color: #33B0CA !important;
   color: white !important;
   font-weight: bold !important;
 }
 
 .primary-bg {
-  background-color: #ee3c4d;
+  background-color: #33B0CA;
 }
 
 
@@ -103,7 +109,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .mnf_btn:hover {
-  background-color: #ee3c4d;
+  background-color: #33B0CA;
 }
 
 .toggle_btn:hover {

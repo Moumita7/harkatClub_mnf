@@ -8,6 +8,13 @@ module.exports = {
         fontFamily: {
           poppins: ['Poppins', 'sans-serif'],
         },
+        colors: {
+          colorButton: '#33B0CA', 
+          colorHeading:"#EAEAEA",
+          colorWhite:"#FAFAFA",
+          colorBlack:"#252525",
+        colorGray:'#616161' 
+        },
       },
     },
     daisyui: {
@@ -17,6 +24,7 @@ module.exports = {
             accent: "#ffe2e5",
             neutral: "#3d4451",
             "base-100": "#ffffff",
+            tool:"#616161"
           },
         },
       ],
